@@ -1,0 +1,10 @@
+.sponsors-style {
+  height: 100vh;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+a {
+  text-decoration: none !important;
+  color: #1E88E5 !important;
+}

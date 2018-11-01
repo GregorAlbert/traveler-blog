@@ -1,0 +1,68 @@
+.articles-style{
+  height: 100vh;
+}
+
+.container-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.card .card-content {
+  flex: 1;
+  padding: 0.25em 0.3em 0;
+}
+
+.card .card-content p {
+  font-size: 1em;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+.card-paragraph{
+  height: 100px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 400px) {
+  .card-paragraph, mat-card-subtitle, .map-button {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .card {
+    max-width: calc(50% - 60px);
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .card {
+    width: calc(33.33333% - 60px);
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .card {
+    width: calc(25% - 60px);
+  }
+}
+
+.paginator-style {
+  position:fixed;
+  bottom:2em;
+  right:3em;
+  background-color: floralwhite;
+}
+
+h2 {
+  font-family: Roboto-Thin,sans-serif;
+}
+

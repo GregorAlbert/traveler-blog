@@ -1,0 +1,22 @@
+agm-map {
+  height: 100vh;
+}
+
+* {
+  color: black;
+}
+
+.window-image img {
+  width: 200px;
+  height: auto;
+}
+
+.action-container {
+  display: flex;
+  justify-content: center;
+}
+
+.action-container button {
+  margin: 8px 2px 8px 2px;
+}
+

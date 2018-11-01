@@ -1,0 +1,37 @@
+<div class="contact-style">
+
+  <mat-toolbar></mat-toolbar>
+  <video autoplay loop id="video-background" muted>
+    <source src="../../assets/video/swim/swim.mp4" type="video/mp4">
+  </video>
+
+    <mat-card class="card-style">
+      <mat-card-content>
+        <h1>
+          {{"contactScreen.title" }}
+        </h1>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="{{'contactScreen.fullName' }}" maxlength="50">
+          <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="{{'contactScreen.email' }}" maxlength="50">
+          <mat-icon matSuffix>contact_mail</mat-icon>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <textarea matInput #message matTextareaAutosize placeholder="{{'contactScreen.message' }}" class="message-style"></textarea>
+        </mat-form-field>
+
+        <!--<re-captcha site_key="<GOOGLE_RECAPTCHA_KEY>"></re-captcha>-->
+
+        <button mat-fab matTooltip="{{'contactScreen.sendMessage' }}" class="button-send-style" color="primary">
+          <mat-icon>send</mat-icon>
+        </button>
+
+      </mat-card-content>
+    </mat-card>
+
+</div>
+
+
+

@@ -1,0 +1,14 @@
+<div class="traveler-container" *ngFor="let traveler of travelers">
+  <div class="traveler-style">
+    <div class="image"><img src="{{traveler.picture}}">
+    </div>
+    <div class="text">
+      <p>{{traveler.name}}</p>
+      <hr class="delimiter">
+      <p class="smaller">{{traveler.position}}</p>
+    </div>
+  </div>
+</div>
+
+
+

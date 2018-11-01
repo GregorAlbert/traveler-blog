@@ -1,0 +1,56 @@
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar-style {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+}
+
+@media screen and (max-width: 824px) {
+  #menu-buttons {
+    display: none;
+  }
+
+  #menu-hamburger {
+    display: block;
+  }
+
+  .another-spacer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 825px) {
+  #menu-buttons {
+    display: block;
+  }
+
+  #menu-hamburger {
+    display: none;
+  }
+
+  .another-spacer {
+    display: block;
+  }
+}
+
+.sidenav {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.router-outlet-style {
+  height: 100vh;
+}
+
+.logo-image{
+  height: 50px;
+  width: auto;
+}

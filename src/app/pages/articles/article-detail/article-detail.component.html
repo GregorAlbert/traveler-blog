@@ -1,0 +1,16 @@
+<mat-toolbar></mat-toolbar>
+
+<div class="blog">
+  <h2>{{article.description}}</h2>
+  <div *ngFor="let paragraph of article.content; let idx = index">
+    <p>
+      {{paragraph}}
+    </p>
+    <div class="image-container" >
+      <img mat-card-image src="{{article.gallery[idx]}}" class="blog-image">
+    </div>
+    <br>
+  </div>
+  <button mat-raised-button (click)=routeGallery(article) class="gallery-button" color="primary">{{"button.gallery" }}</button>
+</div>
+

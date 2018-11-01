@@ -1,0 +1,83 @@
+.about-style {
+  height: 100vh;
+}
+
+.inner {
+  margin: auto;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.outer {
+  height: 42vh;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.content {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: justify;
+  text-justify: auto;
+}
+
+h2 {
+  font-family: Roboto-ThinItalic, sans-serif;
+}
+
+p {
+  font-family: Roboto-Light, sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+  .inner {
+    width: 100%;
+  }
+
+  .content {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  .inner {
+    width: 100%;
+  }
+
+  .content {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1400px) {
+  .inner {
+    width: 50%;
+  }
+
+  .content {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
+@media only screen and (min-width: 1401px) {
+  .inner {
+    width: 50%;
+  }
+
+  .content {
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+}
+
+

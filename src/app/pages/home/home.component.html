@@ -1,0 +1,22 @@
+<div class="home"  [ngStyle]="{ 'background-image': 'url(' + lastArticle.gallery[0] + ')'}">
+
+  <div class="box-style">
+    <div class="background-style"></div>
+    <div class="content-style">
+      <div class="title">
+        <h2>
+          {{lastArticle.description}}
+        </h2>
+      </div>
+      <a mat-fab class="button-style" color="primary" routerLink="/article/{{lastArticle.id}}">
+        <mat-icon>arrow_forward</mat-icon>
+      </a>
+      <div class="description">
+        <p>
+          {{lastArticle.content[0]}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+

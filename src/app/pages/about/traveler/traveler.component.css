@@ -1,0 +1,41 @@
+
+.traveler-container {
+  width: 33%;
+  display: inline;
+  float: left;
+}
+
+.traveler-style {
+  margin: auto;
+  width: 80%;
+}
+
+p, .delimiter {
+  text-align: center;
+}
+
+.smaller {
+  font-size: 0.85em;
+}
+
+.image {
+  align-items: center;
+  float:left;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  /*margin: -75px 0 0 -100px;*/
+  border-radius: 50%;
+  background-position: center;
+}
+
+.text{
+  float: left;
+}
+
+

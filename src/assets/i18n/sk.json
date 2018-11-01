@@ -1,0 +1,33 @@
+{
+  "home": "Domov",
+  "articles": "Články",
+  "about": "O nás",
+  "places": "Mapa",
+  "plans": "Plánované cesty",
+  "sponsors": "Sponzori",
+  "contact": "Kontakt",
+  "toggle_theme": "Zmeniť farebnú tému",
+  "language": "Jazyk",
+  "fullscreen": "Zobrazenie na celú plochu",
+  "fullscreen_exit": "Zrušiť zobrazenie na celú plochu",
+  "options": "Nastavenia",
+  "companies": "Spoločnosti",
+  "supporters": "Sponzori",
+  "button": {
+    "read": "PREČÍTAŤ",
+    "map": "MAPA",
+    "gallery": "GALÉRIA"
+  },
+  "contactScreen": {
+    "title": "Napíšte mi",
+    "fullName": "Celé meno",
+    "email": "Váš e-mail",
+    "message": "Správa",
+    "sendMessage": "Odoslať správu"
+  },
+  "aboutScreen": {
+    "background": "Odkiaľ sme",
+    "travelling": "Prečo milujeme cestovanie",
+    "team": "Tím"
+  }
+}

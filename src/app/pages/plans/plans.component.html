@@ -1,0 +1,22 @@
+<div class="plans-style">
+  <mat-toolbar></mat-toolbar>
+
+  <div class="plans-group">
+    <div *ngFor="let plan of plans; let idx = index" class="plans-item">
+      <mat-expansion-panel [expanded]="idx === 0">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h2>{{plan.location}}</h2>
+          </mat-panel-title>
+          <mat-panel-description>
+            <h4>{{plan.date}}</h4>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>
+          {{plan.description}}
+        </p>
+      </mat-expansion-panel>
+    </div>
+  </div>
+
+</div>

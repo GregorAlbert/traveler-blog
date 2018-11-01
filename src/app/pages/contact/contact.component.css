@@ -1,0 +1,40 @@
+.contact-style {
+  height: 100vh;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.card-style {
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+#video-background {
+  position: fixed;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.message-style {
+  height: 150px;
+}
+
+.button-send-style {
+  left: 42%;
+}
+
+h1{
+  font-family: Roboto-Thin, sans-serif;
+}
+
+
+
+
+

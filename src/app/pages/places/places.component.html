@@ -1,0 +1,19 @@
+<div>
+  <agm-map [zoom]="3">
+    <agm-marker *ngFor="let article of articles" class="mapMarker"
+                [latitude]="article.lat" [longitude]="article.lon">
+      <agm-info-window [disableAutoPan]="true">
+        <h3> {{article.description}}</h3>
+        <div class="window-image">
+          <img src={{article.gallery[0]}}>
+        </div>
+        <div class="action-container">
+          <button (click)=routeArticle(article) mat-raised-button color="primary">READ</button>
+          <button (click)=routeGallery(article) mat-raised-button color="primary">GALLERY</button>
+        </div>
+
+      </agm-info-window>
+    </agm-marker>
+  </agm-map>
+</div>
+

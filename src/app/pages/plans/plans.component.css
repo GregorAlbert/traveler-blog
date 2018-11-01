@@ -1,0 +1,22 @@
+.plans-style {
+  height: 100vh;
+}
+
+.plans-item{
+  margin: 1em;
+}
+
+h2{
+  font-family: Roboto-Thin, sans-serif;
+}
+
+p{
+  font-family: Roboto-Light, sans-serif;
+  font-size: 1.2em;
+  width: 80%;
+  min-width: 300px;
+  max-width: 600px;
+  text-align: justify;
+  text-justify: auto;
+  margin: auto;
+}

@@ -1,0 +1,37 @@
+<div class="articles-style">
+
+  <mat-toolbar></mat-toolbar>
+  <div class="container-style">
+    <div *ngFor="let article of articles"
+         [class.selected]="article === selectedArticle" class="card">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title><h2>{{article.description}}</h2></mat-card-title>
+          <mat-card-subtitle>{{article.date}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src={{article.gallery[0]}}>
+        <mat-card-content>
+          <p class="card-paragraph">
+            {{article.content[0]}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <div class="actions-style">
+            <button (click)=routeArticle(article) mat-button>{{"button.read"}}</button>
+            <button (click)=routePlaces(article) mat-button class="map-button">{{"button.map" }}</button>
+            <button (click)=routeGallery(article) mat-button>{{"button.gallery" }}</button>
+          </div>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div style="clear: both;"></div>
+
+  </div>
+
+</div>
+
+
+
+
+

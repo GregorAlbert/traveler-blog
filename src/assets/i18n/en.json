@@ -1,0 +1,33 @@
+{
+  "home": "Home",
+  "articles": "Articles",
+  "about": "About",
+  "places": "Where we've been",
+  "plans": "Our plans",
+  "sponsors": "Sponsors",
+  "contact": "Contact",
+  "toggle_theme": "Toggle theme",
+  "language": "Language",
+  "fullscreen": "Fullscreen",
+  "fullscreen_exit": "Disable fullscreen",
+  "options": "Options",
+  "companies": "Companies",
+  "supporters": "Supporters",
+  "button": {
+    "read": "READ",
+    "map": "MAP",
+    "gallery": "GALLERY"
+  },
+  "contactScreen": {
+    "title":"Contact me",
+    "fullName":"Full Name",
+    "email":"Your E-mail",
+    "message":"Message",
+    "sendMessage":"Send Message"
+  },
+  "aboutScreen": {
+    "background" :"Our background",
+    "travelling": "Why we love traveling",
+    "team": "Team"
+  }
+}
