@@ -64,7 +64,10 @@
           <hr>
         </mat-sidenav>
 
-        <router-outlet class="router"></router-outlet>
+
+        <div [@routerTransition]="prepareRoute(outlet)">
+          <router-outlet #outlet="outlet" class="router"></router-outlet>
+        </div>
 
       </mat-sidenav-container>
     </div>

@@ -1,14 +1,15 @@
-<div class="home"  [ngStyle]="{ 'background-image': 'url(' + lastArticle.gallery[0] + ')'}">
+<div class="home" [ngStyle]="{ 'background-image': 'url(' + lastArticle.gallery[0] + ')'}">
 
-  <div class="box-style">
+  <div class="box-style" >
     <div class="background-style"></div>
     <div class="content-style">
       <div class="title">
         <h2>
           {{lastArticle.description}}
+          {{state}}
         </h2>
       </div>
-      <a mat-fab class="button-style" color="primary" routerLink="/article/{{lastArticle.id}}">
+      <a mat-fab class="button-style" color="primary" routerLink="/article/{{lastArticle.id}}" [@openClose]="state">
         <mat-icon>arrow_forward</mat-icon>
       </a>
       <div class="description">

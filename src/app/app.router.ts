@@ -13,13 +13,13 @@ import {ArticleGalleryComponent} from "./pages/articles/article-gallery/article-
 
 export const router: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'articles', component: ArticleListComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'places', component: PlacesComponent},
-  {path: 'plans', component: PlansComponent},
-  {path: 'sponsors', component: SponsorsComponent},
-  {path: 'contact', component: ContactComponent},
+  {path: 'home', component: HomeComponent, data: {animation: 'routerTransition'}},
+  {path: 'articles', component: ArticleListComponent, data: {animation: 'a'}},
+  {path: 'about', component: AboutComponent, data: {animation: 'routerTransition'}},
+  {path: 'places', component: PlacesComponent , data: {animation: 'a'}},
+  {path: 'plans', component: PlansComponent , data: {animation: 'routerTransition'}},
+  {path: 'sponsors', component: SponsorsComponent, data: {animation: 'a'}},
+  {path: 'contact', component: ContactComponent, data: {animation: 'routerTransition'}},
   {path: 'article/:id', component: ArticleDetailComponent},
   {path: 'gallery/:id', component: ArticleGalleryComponent},
   {path: 'places/:id', component: PlaceDetailComponent}

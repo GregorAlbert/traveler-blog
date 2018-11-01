@@ -1,12 +1,16 @@
 import {Component, ViewChild} from '@angular/core';
-import {NavigationEnd, Router} from "@angular/router";
+import {NavigationEnd, Router, RouterOutlet} from "@angular/router";
 import {MatSidenav} from "@angular/material";
 import * as screenfull from 'screenfull';
+import {routerTransition} from "./shared/animation/router-animation";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  animations: [
+    routerTransition
+  ]
 })
 export class AppComponent {
   isFullScreen = false;
@@ -44,5 +48,11 @@ export class AppComponent {
   toggleSideNav() {
     this.isSideNavOpened = !this.isSideNavOpened;
     this.sidenav.toggle();
+  }
+
+  public prepareRoute(outlet: RouterOutlet) {
+    console.log(outlet.activatedRouteData['animation']);
+    console.log("c", outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation']);
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
 }
